@@ -135,6 +135,10 @@
         <!-- ko if: $data.settingsInitialized() -->
         <h3>General Settings</h3>
         <p class="setting">
+          <input type="checkbox" id="single-player-mode" data-bind="checked: $data.singlePlayerMode">
+          <label for="single-player-mode">Send commands to most recent player tab only.</label>
+        </p>
+        <p class="setting">
           <input type="checkbox" id="open-on-update" data-bind="checked: $data.openOnUpdate">
           <label for="open-on-update">Open information tab on update.</label>
         </p>
